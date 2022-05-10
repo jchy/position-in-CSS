@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid #ccc;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            /* display:table-cell and vertical-align: middle is used for putting the text in vertically middle position*/
+        }
+        #box2{
+            /* position relavtive is the position of the element relative to its normal position */
+            position: relative;
+            top: 20px;
+            left: 50px;
+        }
+        .container{
+            position: absolute;
+            top:60px;
+            left: 50px;
+            border : 1px solid red;
+            height: 5000px;
+        }
+        #box3{
+            /* position absolute is the position of the element w.r.t body */
+            position: absolute;
+            top: 500px;
+        }
+        #box4{
+            /* position fixed is the position of element relative to the browser window */
+            position:fixed;
+            top:10px;
+            right:2px;
+        }
+        #box1{
+            /* position sticky is a hybrid of both relative and fixed position */
+            position:sticky;
+            left:300px;
+            top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
